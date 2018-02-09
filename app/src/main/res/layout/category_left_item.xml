@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/tag_lyt"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/category_tag_selector"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:padding="14dp">
+
+    <TextView
+        android:id="@+id/tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="t1"
+        />
+</LinearLayout>

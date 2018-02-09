@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BottomTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:textColor">@drawable/bottom_txt_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="OrderTextStyle">
+        <item name="android:background">@drawable/common_bg_selector</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Theme.MyApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/red</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

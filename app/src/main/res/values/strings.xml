@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ShoppingMall</string>
+
+    <string name="mine">我的</string>
+    <string name="homepage">首页</string>
+    <string name="category">分类</string>
+    <string name="shoppingcart">购物车</string>
+
+    <string name="wait_for_payment">待付款</string>
+    <string name="wait_for_delivery">待发货</string>
+    <string name="wait_for_goods">待收货</string>
+    <string name="all">全部</string>
+    <string name="complete">完成</string>
+
+    <string name="editor">编辑</string>
+
+    <string name="delete">删除</string>
+    <string name="all_choice">全选</string>
+    <string name="total">总计</string>
+
+    <string name="pay">结算</string>
+    <string name="recommend_category">推荐分类</string>
+    <string name="about_me">关于我</string>
+
+    <string name="go_back">返回</string>
+</resources>

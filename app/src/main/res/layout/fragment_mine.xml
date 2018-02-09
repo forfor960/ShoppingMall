@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/mine"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/wait_for_payment_tv"
+            style="@style/OrderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/wait_for_payment"/>
+
+        <TextView
+            android:id="@+id/wait_for_delivery_tv"
+            style="@style/OrderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/wait_for_delivery"/>
+
+        <TextView
+            android:id="@+id/wait_for_goods_tv"
+            style="@style/OrderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/wait_for_goods"/>
+
+        <TextView
+            android:id="@+id/completed_tv"
+            style="@style/OrderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/complete"/>
+
+        <TextView
+            android:id="@+id/all_tv"
+            style="@style/OrderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/all"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"/>
+
+    <LinearLayout
+        android:id="@+id/about_me_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/common_bg_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/about_me"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"/>
+</LinearLayout>

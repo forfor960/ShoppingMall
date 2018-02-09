@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_height">45dp</dimen>
+    <dimen name="layout_padding_left">15dp</dimen>
+    <dimen name="layout_padding_right">15dp</dimen>
+
+    <dimen name="line_height">1px</dimen>
+
+    <dimen name="sp_1">8sp</dimen>
+    <dimen name="sp_2">12sp</dimen>
+    <dimen name="sp_3">16sp</dimen>
+    <dimen name="sp_4">18sp</dimen>
+    <dimen name="sp_5">24sp</dimen>
+    <dimen name="sp_6">30sp</dimen>
+</resources>

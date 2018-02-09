@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:atguigu="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:paddingLeft="16dp">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox_selector"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_toRightOf="@+id/checkbox"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/image"
+            android:maxLines="2"
+            android:text="测试测试测试"/>
+
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:text=""
+            android:textColor="@color/blue"/>
+
+        <com.yingzi.shoppingmall.widget.NumberAddSubView
+            android:id="@+id/number_add_sub_view"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/price_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/layout_padding_right"
+            android:visibility="visible"
+            atguigu:maxValue="200"
+            atguigu:minValue="1"
+            atguigu:value="2"
+            />
+
+        <ImageView
+            android:id="@+id/delete_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/price_tv"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/delete"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

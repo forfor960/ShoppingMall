@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lyt"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:text="@string/shoppingcart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:id="@+id/change_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/layout_padding_left"
+                android:paddingRight="@dimen/layout_padding_right"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/line_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/gray"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                ></android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottom_relyt1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/layout_padding_left"
+            android:visibility="gone"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/line_color"/>
+
+            <CheckBox
+                android:id="@+id/allchoice_ck1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/checkbox_selector"
+                android:paddingLeft="5dp"
+                android:text="@string/all_choice"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/allchoice_ck1"
+                android:gravity="center_vertical"
+                android:text="@string/total"/>
+
+            <TextView
+                android:id="@+id/total_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:gravity="center_vertical"
+                android:text="0.00"
+                android:textColor="@color/blue"/>
+
+            <Button
+                android:id="@+id/pay_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/blue_btn_selector"
+                android:text="@string/pay"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/line_color"/>
+
+        <RelativeLayout
+            android:id="@+id/bottom_relyt2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/layout_padding_left">
+
+            <CheckBox
+                android:id="@+id/allchoice_ck2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/checkbox_selector"
+                android:paddingLeft="5dp"
+                android:text="@string/all_choice"/>
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/blue_btn_selector"
+                android:text="@string/delete"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
